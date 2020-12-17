@@ -25,7 +25,7 @@ Before you can launch the mock server, you need to manually put metadata EDMX do
 <Property Name="YY1_AddrLastCheckedBy_bus" Type="Edm.String" MaxLength="50" sap:label="Addresses Last Checked By"/>
 ```
 
-After you have thus prepared the mock server,  you can run the mock server on your local machine (at http://localhost:3000) or on SAP Cloud Platform, Cloud Foundry, as described in either of the following two sections.
+After you have thus prepared the mock server,  you can run the mock server on your local machine (at https://localhost:3000) or on SAP Cloud Platform, Cloud Foundry, as described in either of the following two sections.
 
 ### Locally
 #### Prerequisites
@@ -42,9 +42,9 @@ npm start
 
 Wait until you see the output `Mock server started`. Access the list of mock OData services at http://localhost:3000 (no credentials required).
 
-Use `http://localhost:3000` as the URL for your destination `ErpQueryEndpoint` with any dummy user and password, for example:
+Use `https://localhost:3000` as the URL for your destination `ErpQueryEndpoint` with any dummy user and password, for example:
 ```
-destinations=[{name: 'ErpQueryEndpoint', url: 'http://localhost:3000', username: 'DUMMY', password: 'dummy'}]
+destinations=[{name: 'ErpQueryEndpoint', url: 'https://localhost:3000', username: 'DUMMY', password: 'dummy'}]
 ```
 
 ### On SAP Cloud Platform, Cloud Foundry
@@ -58,7 +58,7 @@ Open the SAP [Cloud Platform Cockpit](https://account.hana.ondemand.com/) and na
 
 Execute the following commands (replace the following URL with your API endpoint):
 ```
-cf api https://api.cf.eu10.hana.ondemand.com
+cf api https://api.cf.ap21.hana.ondemand.com
 cf login
 cf push
 ```

@@ -13,8 +13,10 @@ applications:
     SET_LOGGING_LEVEL: '{ROOT: INFO, com.sap.cloud.sdk: INFO}'
     JBP_CONFIG_SAPJVM_MEMORY_SIZES: 'metaspace:128m..'
     JBP_CONFIG_COMPONENTS: "jres: ['com.sap.xs.java.buildpack.jdk.SAPMachineJDK']"
-#  services:
+    destinations: "[{name: 'MyErpSystem', url: 'http://firstapp-talkative-emu-rb.cfapps.ap21.hana.ondemand.com', username: 'DUMMY', password: 'DUMMY', trustAll: 'true' }]"
+
+  services:
+  - my-destination
+  - my-xsuaa
 #  - my-application-logs
-#  - my-xsuaa
-#  - my-destination
 #  - my-connectivity

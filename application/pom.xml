@@ -114,6 +114,13 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>jcache</artifactId>
+            <scope>runtime</scope>
+            <version>2.7.0</version>
+          </dependency>
     </dependencies>
 
     <build>
